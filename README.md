@@ -1,0 +1,2 @@
+# Detective-core
+Detective game
