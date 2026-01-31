@@ -1,4 +1,4 @@
 label flower:
-    call screen small
+    show screen small
     "flower"
     

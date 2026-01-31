@@ -3,11 +3,10 @@ define Eyenile = Character("Eyenile")
 define Remido = Character("Remido")
 
 default reizes =0
-default viet =0
+default viet = 0
 label start:
     $ imposters = ["Eyenile","Sam"]
     $ killer = renpy.random.choice(imposters)
-    call screen map
 
     "Hello detective"
     "Your task for today is find the killer"
@@ -21,8 +20,8 @@ label start:
     "Oh, I almost forgot!"
     "If you won't find the real killer, we will just kill you :3"
     "Good luck and have fun! :D"
-    
-    #jump Room
+
+    call screen map
 
 
 

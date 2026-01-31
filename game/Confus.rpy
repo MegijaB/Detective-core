@@ -1,3 +1,3 @@
 label Confus:
-    call screen small
+    show screen small
     "Confus"

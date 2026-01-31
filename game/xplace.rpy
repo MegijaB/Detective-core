@@ -1,3 +1,3 @@
 label xplace:
-    call screen small
+    show screen small
     "xplace"

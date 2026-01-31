@@ -1,3 +1,3 @@
 label TV:
-    call screen small
+    show screen small
     "TV"
