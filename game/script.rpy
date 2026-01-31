@@ -22,7 +22,7 @@ label start:
     "If you won't find the real killer, we will just kill you :3"
     "Good luck and have fun! :D"
     
-    jump Room
+    #jump Room
 
 
 
