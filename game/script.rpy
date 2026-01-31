@@ -1,33 +1,28 @@
-﻿# The script of the game goes in this file.
+﻿
+define Eyenile = Character("Eyenile")
+define Remido = Character("Remido")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
-
-# The game starts here.
-
+default reizes =0
+default viet =0
 label start:
+    $ imposters = ["Eyenile","Sam"]
+    $ killer = renpy.random.choice(imposters)
+    call screen map
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    "Hello detective"
+    "Your task for today is find the killer"
+    "We found several dead bodys in room 15"
+    "So for this task we choose you!"
+    "You can walk around and ask questions to creatures, that live here"
+    "But remember, you can ask only 5 questions"
+    "After that they become silent and don't want to talk"
+    "We don't care if you ask all of questions to one person or each questin to each creatue"
+    "We just need result"
+    "Oh, I almost forgot!"
+    "If you won't find the real killer, we will just kill you :3"
+    "Good luck and have fun! :D"
+    
+    jump Room
 
-    scene bg room
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
-    return
