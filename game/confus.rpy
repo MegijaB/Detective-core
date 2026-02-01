@@ -22,6 +22,21 @@ label confus:
             "Nevermind":
                 jump confus
 
+    label otherco:
+        show judge-default as char
+        Mutatum "I will tell you what you need to know"
+        menu:
+            "Tell me about Eye":
+                jump oco1
+            "Tell me about Doll":
+                jump oco2
+            "Tell me about Furry":
+                jump oco3
+            "Tell me about Moth":
+                jump oco4
+            "Nevermind":
+                jump confus
+
     label yco1:
         $ reizes += 1
         Mutatum "I cared about the victim as much as I do about everyone else"
@@ -69,4 +84,64 @@ label confus:
             "What does that mean?"
             show judge-tilt as char
             Mutatum "I told you I'd only tell you what you need to know"
+        jump count
+    
+    label oco1:
+        $ reizes += 1
+        show judge-default as char
+        Mutatum "Even grounded people can sometimes neglect to look at what's in front of them"
+        Mutatum "Eyenile is no exception"
+        Mutatum "She appears to believe that I am an 'it,' a 'robot'"
+        show judge-curious as char
+        Mutatum "However, I, too, bleed and require blood for things more than mere fuel"
+        show judge-tilt as char
+        Mutatum "Could this divergence in her perception be that doll's doing? Or is that one of her careful machinations?"
+        "What do you mean?"
+        show judge-default as char
+        Mutatum "Why don't you go get to know them better and see for yourself?"
+        jump count
+
+    label oco2:
+        $ reizes += 1
+        show judge-default as char
+        Mutatum "I am usually not one for jokes, but even people like me must balance out the prim and proper act"
+        show judge-curious as char
+        Mutatum "It just so happens that Remido is quite easy to tease"
+        show judge-default as char
+        Mutatum "Well, it is true that he is oh, so unstable on his own"
+        "Unstable?"
+        Mutatum "Brash, suspicious of others... Not in the childlike way that talking TV is"
+        Mutatum "Eyenile balances him out quite well"
+        "Anything else you'd like to add, other than 'the balance?'"
+        if killer != "Mutatum":
+            Mutatum "I suppose... we do share a similarity"
+            Mutatum "However, 'my' resources are limited"
+            "And what does that mean?"
+            Mutatum "Nothing that you need to know"
+        else:
+            Mutatum "Hmm..."
+            show judge-tilt as char
+            Mutatum "No"
+        jump count
+    
+    label oco3:
+        $ reizes += 1
+        show judge-default as char
+        Mutatum "I don't know the TV too well"
+        Mutatum "Sometimes when I pass by a random screen close to their domain, that cute character will flicker in the screen"
+        "Flicker? Could you elaborate on that?"
+        Mutatum "A shadow passes, followed by but a brief flash of light... A little too quick for the average person or creature to make sense of"
+        Mutatum "The face that shows during those brief moments hints at frustration"
+        show judge-tilt as char
+        Mutatum "Perhaps they are merely guarding their territory"
+        jump count
+    
+    label oco4:
+        $ reizes += 1
+        Mutatum "What a mysterious fellow"
+        Mutatum "I've seen their grotesque little hut, all alone in that otherwise beautiful field"
+        Mutatum "However, whenever I've tried to communicate with them in any capacity beyond court orders..."
+        Mutatum "What followed was a deathly silence"
+        "You sure they weren't out for a walk?"
+        Mutatum "Certain. My indicators showed signs of life in that house"
         jump count
