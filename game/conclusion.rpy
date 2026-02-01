@@ -47,6 +47,8 @@ label conclusion:
         "We are so proud of you!"
         "But"
         "You now know too much, we can't let you live"
+        play music "audio/kill.mp3" fadein 0 volume 0.5
+        "You were okay as detective"
         return
 
     label incorrect:
@@ -54,4 +56,6 @@ label conclusion:
         "You know what does it mean?"
         "Right"
         "You made a mistake and now you have to pay for it"
+        play music "audio/kill.mp3" fadein 0 volume 0.5
+        "It's your fault"
         return

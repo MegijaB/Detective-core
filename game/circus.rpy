@@ -67,7 +67,13 @@ label circus:
       Remido "WHO ARE YOU?!"
       show doll7 as char
       Remido "DETECTIVE"
-      show doll6 as char
+      image angry:
+        "images/characters/doll5.png"
+        pause 0.2
+        "images/characters/doll6.png"
+        pause 0.2
+        repeat
+      show angry as char
       Remido "YOU ARE TOO PROUD BUT YOU DONT UNDERSTAND ONE THING"
       show doll7 as char
       Remido "THEY WILL JUST REPLACE YOU IF YOU DIE"

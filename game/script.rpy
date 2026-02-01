@@ -13,7 +13,7 @@ label start:
 
     "Hello, detective"
     "Your task for today is to find the killer"
-    "We have found several dead bodies in room 15"
+    "We have found several dead bodies in room X"
     "So we chose you to crack this case!"
     "You can walk around and ask questions to the creatures that live here"
     "But remember, you can ask only 5 questions"
