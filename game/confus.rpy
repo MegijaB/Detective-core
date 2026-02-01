@@ -50,7 +50,7 @@ label confus:
 
     label yco2:
         $ reizes += 1
-        if killer = "Mutatum":
+        if killer == "Mutatum":
             show judge-dismiss as char
             Mutatum "Why, 'I' was here, of course"
         else:
@@ -59,7 +59,7 @@ label confus:
         Mutatum "I can't leave this place..."
         show judge-curious as char
         Mutatum "Not until the levels of chaos in this place reach an equilibrium"
-        if killer = "Mutatum":
+        if killer == "Mutatum":
             "Why do I get the feeling there's a catch?"
             Mutatum "For every straightforward thing in this universe, there, too, must be roundabouts"
             Mutatum "Just like my area of expertise"
