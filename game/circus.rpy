@@ -84,7 +84,88 @@ label circus:
     "I used one of my five possible questoins for this and you just say that's all?"
     Remido "It is the next question?"
     jump count
+
+  label otherc:
+    Remido "Which one?"
+    menu:
+      "Tell me about Eye":
+        jump ceye
+      "Tell me about Judge":
+        jump cJudge
+      "Tell me about Furry":
+        jump cFurry
+      "Tell me about Moth":
+        jump cMoth
+      "Nevermind":
+        jump corest
+
+  label ceye:
+    $  reizes +=1
+    Remido "You mean Eyenile?"
+    "Yeah, the one who lives in Drop Forest"
+    if killer == "Eyenile":
+      Remido "She is shy"
+      Remido "Ofcourse if you ask something her she is not who easily reject you"
+      "I would want more information about if she could be a murderer"
+      Remido "I don't think so"
+      Remido "I would say it's little disgusting that you could think of her that way"
+      "?"
+      Remido "Yes, Victim was rude to her, but she could never do something like that"
+      jump count
+    else:
+      Remido "She has claws and IS bloodsucker"
+      "Wow, you really tell me everything about her?"
+      "I thought you will be silent"
+      Remido "Because I'm sure she is not the murderer"
+      "And I will continue to belive it"
+      jump count
     
+
+  label cJudge:
+    $  reizes +=1
+    Remido "I hate him"
+    "Just like that?"
+    Remido "They are aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaannoying"
+    Remido "They think I am violateing law"
+    "You have laws here?"
+    Remido "No, but they think otherwise"
+    Remido " - Remido, you are too loud"
+    Remido "- Remido, I am sure you are selling somthing illegal"
+    Remido " - Remido, I'm sure you killed someone{cps=1} {/cps}{nw}"
+    "huh?"
+    Remido "But to be honest they are really careful"
+    "Hmmm..."
+    jump count
+
+  label cFurry:
+    $  reizes +=1
+    Remido "You want know more about TV furry guy?"
+    "Why you all call him furry...?"
+    Remido "..."
+    Remido "You want know more about TV furry guy?"
+    Remido "Well, he has claws"
+    Remido "But I think it's obviously by just looking at him"
+    "But he is just TV"
+    Remido "Poor detective, got fooled by Furry box"
+    "?????"
+    Remido "He just shows as something cute"
+    Remido "I can't explain, but I feel something dark from him"
+    "...."
+    Remido "I have doubts that he is stable"
+    jump count
+
+
+  label cMoth:
+    $  reizes +=1
+    Remido "Mostly hides in flowers"
+    Remido "Has horns"
+    "And...."
+    Remido "That's all"
+    "It's a joke, right?"
+    Remido "Listen, if you want hear something more about it, then better would be if you ask Eyenile about it"
+    Remido "She is more closer to it than I"
+    Remido "I am not real fan of bugs"
+    jump count
 
 
   
