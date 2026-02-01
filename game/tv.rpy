@@ -1,3 +1,3 @@
-label TV:
+label tv:
     show screen small
-    "TV"
+    "tv"

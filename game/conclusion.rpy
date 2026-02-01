@@ -1,4 +1,5 @@
 label conclusion:
+<<<<<<< HEAD
     menu:
         "TV":
             jump ChooseTV
@@ -54,3 +55,7 @@ label conclusion:
         "Right"
         "You made a mistake and now you have to pay for it"
         return
+=======
+    "The end"
+    return
+>>>>>>> 2a34ff97ac80c23132fb6205055fad9ca2fc297b
