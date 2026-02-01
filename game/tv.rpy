@@ -3,7 +3,6 @@ label tv:
     show light-sus as char
     show light-default as char
     show screen small
-    "tv"
     menu:
         "Ask something about TV":
             jump yout

@@ -2,7 +2,6 @@ label confus:
     $ viet = 5
     show judge-default as char
     show screen small
-    "confus"
     menu:
         "Ask something about Mutatum":
             jump youco
