@@ -1,3 +1,3 @@
 label conclusion:
-    "Beigas"
+    "The end"
     return
