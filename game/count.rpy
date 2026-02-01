@@ -6,3 +6,5 @@ label count:
             jump circus
         elif viet == 2:
             jump forest
+        elif viet == 3:
+            jump flower
