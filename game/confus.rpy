@@ -4,9 +4,9 @@ label confus:
     show screen small
     "confus"
     menu:
-        "Ask something about Mutatum"
+        "Ask something about Mutatum":
             jump youco
-        "Ask something about others"
+        "Ask something about others":
             jump otherco
 
     label youco:
@@ -127,7 +127,7 @@ label confus:
     label oco3:
         $ reizes += 1
         show judge-default as char
-        Mutatum "I don't know the TV too well"
+        Mutatum "I don't know the TV too well" 
         Mutatum "Sometimes when I pass by a random screen close to their domain, that cute character will flicker in the screen"
         "Flicker? Could you elaborate on that?"
         Mutatum "A shadow passes, followed by but a brief flash of light... A little too quick for the average person or creature to make sense of"
