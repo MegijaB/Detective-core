@@ -1,4 +1,3 @@
-default
 label confus:
     show judge-default as char
     show screen small
