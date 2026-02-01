@@ -123,10 +123,10 @@ label circus:
 
   label cJudge:
     $  reizes +=1
-    Remido "I hate him"
+    Remido "I hate them"
     "Just like that?"
     Remido "They are aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaannoying"
-    Remido "They think I am violateing law"
+    Remido "They think I am violating the law"
     "You have laws here?"
     Remido "No, but they think otherwise"
     Remido " - Remido, you are too loud"
