@@ -1,11 +1,14 @@
 ﻿
 define Eyenile = Character("Eyenile")
 define Remido = Character("Remido")
+define Judge = Character("Judge")
+define TV = Character("TV")
+define Moth = Character("Moth")
 
 default reizes =0
 default viet = 0
 label start:
-    $ imposters = ["Eyenile","Sam"]
+    $ imposters = ["Eyenile","Sam","Judge","TV","Moth" ]
     $ killer = renpy.random.choice(imposters)
 
     "Hello detective"
