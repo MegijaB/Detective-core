@@ -1,4 +1,5 @@
 label tv:
+    $ viet = 4
     show light-sus as char
     show light-default as char
     show screen small
