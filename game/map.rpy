@@ -19,7 +19,7 @@ screen map:
         ypos 250
         idle "Confus1.png"
         hover "Confus.png"
-        action Jump("Confus")
+        action Jump("confus")
 
     imagebutton:
         xpos 790
@@ -40,7 +40,7 @@ screen map:
         ypos 750
         idle "TV1.png"
         hover "TV.png"
-        action Jump("TV")
+        action Jump("tv")
 
 screen small:
     imagebutton:
