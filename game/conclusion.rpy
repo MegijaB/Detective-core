@@ -1,4 +1,5 @@
 label conclusion:
+    hide char
     menu:
         "TV":
             jump ChooseTV
