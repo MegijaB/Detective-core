@@ -88,7 +88,9 @@ label tv:
         if killer == "Remido" or killer == "Eyenile":
             TV "But don't spin those lies about me!"
             TV "Why I oughta make a SCARECROW outta her or her little DOLL friend!"
-        jump count
+            jump count
+        else:
+            jump count
 
     label ot2:
         $ reizes += 1
@@ -108,11 +110,12 @@ label tv:
         if killer == "TV":
             TV "They... Uh... They'd boil my crops!"
             TV "ALL MY WORK WOULD BE RUINED!"
+            jump count
         else:
             TV "I shouldn't make 'them' my enemy..."
             TV "Not only would they ruin my crops... THEY'D REPURPOSE THEM INTO BORING MACHINES!"
             TV "I can't let that happen!"
-        jump count
+            jump count
 
     label ot4:
         $ reizes += 1
@@ -134,8 +137,9 @@ label tv:
             TV "I mean, how could ah even seen them? I live in a screen!"
             "But you can see me now"
             TV "WELL, MAYBE YOU SHOULD ASK LESS QUESTIONS!!!"
+            jump count
         else:
             TV "Well, doy! I've seen that moth..."
             TV "Through their screen!"
             TV "Hey, why does this even matter?"
-        jump count
+            jump count

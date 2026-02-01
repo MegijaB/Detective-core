@@ -53,17 +53,20 @@ label confus:
         if killer == "Mutatum":
             show judge-dismiss as char
             Mutatum "Why, 'I' was here, of course"
-        else:
-            show judge-default as char
-            Mutatum "Why, I was here, of course"
-        Mutatum "I can't leave this place..."
-        show judge-curious as char
-        Mutatum "Not until the levels of chaos in this place reach an equilibrium"
-        if killer == "Mutatum":
+            Mutatum "I can't leave this place..."
+            show judge-curious as char
+            Mutatum "Not until the levels of chaos in this place reach an equilibrium"
             "Why do I get the feeling there's a catch?"
             Mutatum "For every straightforward thing in this universe, there, too, must be roundabouts"
             Mutatum "Just like my area of expertise"
-        jump count
+            jump count
+        else:
+            show judge-default as char
+            Mutatum "Why, I was here, of course"
+            Mutatum "I can't leave this place..."
+            show judge-curious as char
+            Mutatum "Not until the levels of chaos in this place reach an equilibrium"
+            jump count
     
     label yco3:
         $ reizes += 1
@@ -77,13 +80,14 @@ label confus:
             show judge-tilt as char
             Mutatum "Surely you don't want to waste one of your precious chances to ask a question on something as trivial as this?"
             "..."
+            jump count
         else:
             show judge-default as char
             Mutatum "...but 'I' gave it up for the greater good, for the greater balance"
             "What does that mean?"
             show judge-tilt as char
             Mutatum "I told you I'd only tell you what you need to know"
-        jump count
+            jump count
     
     label oco1:
         $ reizes += 1
@@ -117,11 +121,12 @@ label confus:
             Mutatum "However, 'my' resources are limited"
             "And what does that mean?"
             Mutatum "Nothing that you need to know"
+            jump count
         else:
             Mutatum "Hmm..."
             show judge-tilt as char
             Mutatum "No"
-        jump count
+            jump count
     
     label oco3:
         $ reizes += 1
