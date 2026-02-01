@@ -1,5 +1,6 @@
 default mask =0
 label circus:
+  scene backroundcircus
   $  viet = 1
   show doll1 as char
   show screen small

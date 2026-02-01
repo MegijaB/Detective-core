@@ -1,7 +1,8 @@
 
 label forest:
-    show eye1 as char
+    scene backgrounddrop
     $  viet = 2
+    show eye1 as char
     show screen small
     menu:
         "Ask something about Eyenile":
