@@ -8,11 +8,7 @@ define Moth = Character("Moth")
 default reizes =0
 default viet = 0
 label start:
-<<<<<<< HEAD
     $ imposters = ["Eyenile","Remido","Judge","TV","Moth" ]
-=======
-    $ imposters = ["Eyenile","Sam","Mutatum","TV","Moth" ]
->>>>>>> 2a34ff97ac80c23132fb6205055fad9ca2fc297b
     $ killer = renpy.random.choice(imposters)
 
     "Hello, detective"
