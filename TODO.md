@@ -7,7 +7,9 @@ Komentārus Renpy failos apzīmē **# Šādi**
 
 ## Programming
 
-TBA
+### Credits
+
+Add credits
 
 ---
 
